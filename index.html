@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Kost & Perumahan Terbaik Dekat IPB Dramaga | Rumah Dekat IPB</title>
+    <meta name="description" content="Temukan kost dan perumahan terverifikasi dekat IPB Dramaga. Harga transparan, 500+ mahasiswa sudah menemukan huniannya.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-home logo-icon"></i>
+                <span class="logo-text">Rumah Dekat IPB</span>
+                <span class="logo-tagline">PROPERTY & HOUSING</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="#">Perumahan</a></li>
+                <li><a href="#">Kostan</a></li>
+                <li><a href="#">Semua Properti</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline"><i class="fas fa-scale-balanced"></i> Bandingkan Properti</a>
+                <a href="#" class="btn btn-primary"><i class="fab fa-whatsapp"></i> Hubungi Kami</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="badge">🏠 Platform Hunian Kampus #1</span>
+                <h1>Temukan Rumah Keduamu <span class="highlight">Dekat IPB Bogor</span></h1>
+                <p>Kost & hunian terverifikasi, 10–15 menit dari gerbang IPB Dramaga. Cocok untuk mahasiswa baru & keluarga.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-shield-halved stat-icon"></i>
+                        <span>Terverifikasi</span>
+                    </div>
+                    <span class="stat-divider">·</span>
+                    <div class="stat">
+                        <i class="fas fa-building stat-icon"></i>
+                        <span>100+ Properti</span>
+                    </div>
+                    <span class="stat-divider">·</span>
+                    <div class="stat">
+                        <i class="fas fa-wallet stat-icon"></i>
+                        <span>Harga Transparan</span>
+                    </div>
+                </div>
+                <div class="hero-testimonials">
+                    <div class="avatar-group">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User" class="avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="avatar">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User" class="avatar">
+                    </div>
+                    <span>500+ mahasiswa sudah menemukan huniannya</span>
+                </div>
+                <!-- Search Filters -->
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label><i class="fas fa-location-dot"></i> Zona</label>
+                        <div class="filter-chips" id="zoneChips">
+                            <button class="chip active">Dramaga</button>
+                            <button class="chip">Bara</button>
+                            <button class="chip">Baban</button>
+                            <button class="chip">Ciampea</button>
+                            <button class="chip">Babakan Raya</button>
+                            <button class="chip">Cangkurawok</button>
+                            <button class="chip">Perumdos</button>
+                        </div>
+                    </div>
+                    <div class="filter-row">
+                        <div class="filter-group">
+                            <label><i class="fas fa-door-open"></i> Tipe Hunian</label>
+                            <select class="filter-select">
+                                <option>Semua Tipe</option>
+                                <option>Kost Putra</option>
+                                <option>Kost Putri</option>
+                                <option>Kost Campur</option>
+                                <option>Perumahan</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label><i class="fas fa-money-bill-wave"></i> Budget</label>
+                            <select class="filter-select">
+                                <option>Semua Budget</option>
+                                <option>&lt; Rp 1 Juta</option>
+                                <option>Rp 1 - 1.5 Jt</option>
+                                <option>Rp 1.5 - 2.5 Jt</option>
+                                <option>&gt; Rp 2.5 Juta</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-primary btn-search"><i class="fas fa-search"></i> Cari Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80" alt="Mahasiswa IPB yang ceria saat wisuda" class="hero-img">
+                <div class="floating-card card-1">
+                    <i class="fas fa-check-circle"></i> Terverifikasi
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-map-pin"></i> 5 menit ke kampus
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PARTNERS ========== -->
+    <section class="partners">
+        <div class="container">
+            <p class="section-subtitle">DIPERCAYA OLEH DEVELOPER TERKEMUKA</p>
+            <div class="partner-logos">
+                <div class="partner-item"><i class="fas fa-city"></i> Bogor Hills Estate</div>
+                <div class="partner-item"><i class="fas fa-tree-city"></i> Dramaga Land</div>
+                <div class="partner-item"><i class="fas fa-school"></i> IPB Living</div>
+                <div class="partner-item"><i class="fas fa-mountain-city"></i> Bukit Cimanggu City</div>
+                <div class="partner-item"><i class="fas fa-plant"></i> Taman Yasmin</div>
+                <div class="partner-item"><i class="fas fa-building"></i> Sentul Nirwana</div>
+                <div class="partner-item"><i class="fas fa-archway"></i> Pakuan Regency</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== QUICK SEARCH ========== -->
+    <section class="quick-search">
+        <div class="container">
+            <span class="badge badge-small">TIPS</span>
+            <h2 class="section-title">Pencarian Populer</h2>
+            <p class="section-desc">Kategori yang paling sering dicari mahasiswa IPB</p>
+            <div class="quick-grid">
+                <a href="#" class="quick-card">
+                    <div class="quick-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h4>Kost Maba</h4>
+                    <span>Dekat CCR</span>
+                </a>
+                <a href="#" class="quick-card">
+                    <div class="quick-icon"><i class="fas fa-person-walking"></i></div>
+                    <h4>Jalan Kaki</h4>
+                    <span>&lt; 10 mnt</span>
+                </a>
+                <a href="#" class="quick-card">
+                    <div class="quick-icon"><i class="fas fa-coins"></i></div>
+                    <h4>Mulai 1 Jt</h4>
+                    <span>Hemat</span>
+                </a>
+                <a href="#" class="quick-card">
+                    <div class="quick-icon"><i class="fas fa-snowflake"></i></div>
+                    <h4>Fasilitas AC</h4>
+                    <span>Premium</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURED PROPERTIES ========== -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="badge badge-small">PILIHAN TERBAIK</span>
+                    <h2 class="section-title">Rekomendasi Populer</h2>
+                    <p class="section-desc">Properti dengan rating tinggi dan fasilitas lengkap.</p>
+                </div>
+                <div class="section-actions">
+                    <button class="btn-icon" id="slideLeft"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn-icon" id="slideRight"><i class="fas fa-chevron-right"></i></button>
+                    <a href="#" class="btn btn-link">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="property-carousel" id="featuredCarousel">
+                <div class="carousel-track" id="featuredTrack">
+                    <!-- Cards injected by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NEAREST TO CAMPUS ========== -->
+    <section class="nearest">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="badge badge-small">LOKASI STRATEGIS</span>
+                    <h2 class="section-title">Paling Dekat Kampus</h2>
+                    <p class="section-desc">Bisa jalan kaki ke gerbang IPB Dramaga.</p>
+                </div>
+                <a href="#" class="btn btn-link">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="property-grid" id="nearestGrid">
+                <!-- Cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STUDENT BUDGET ========== -->
+    <section class="budget">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="badge badge-small">HARGA BERSAHABAT</span>
+                    <h2 class="section-title">Budget Pelajar</h2>
+                    <p class="section-desc">Pilihan properti diurutkan otomatis dari harga termurah.</p>
+                </div>
+                <a href="#" class="btn btn-link">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="property-grid grid-4" id="budgetGrid">
+                <!-- Cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY CHOOSE US ========== -->
+    <section class="why-us">
+        <div class="container">
+            <span class="badge badge-small">KEUNGGULAN</span>
+            <h2 class="section-title">Kenapa Pilih Rumah Dekat IPB?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-hand-holding-dollar"></i></div>
+                    <h3>Biaya Admin</h3>
+                    <p>100% gratis. Hubungi pemilik properti langsung tanpa perantara.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-map-locations"></i></div>
+                    <h3>7 Zona Tersedia</h3>
+                    <p>Dari Bara, Baban, Dramaga, Ciampea hingga Babakan Raya.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Langsung ke Pemilik</h3>
+                    <p>Tanpa calo. Anda berkomunikasi langsung dengan pemilik properti.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-check"></i></div>
+                    <h3>Data Terverifikasi</h3>
+                    <p>Setiap properti kami verifikasi untuk keamanan dan kenyamanan Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPLORE PROPERTIES ========== -->
+    <section class="explore">
+        <div class="container">
+            <div class="explore-header">
+                <h2 class="section-title">Jelajahi Properti di Sekitar IPB</h2>
+                <div class="explore-tabs">
+                    <button class="tab-btn active" data-filter="all">Semua</button>
+                    <button class="tab-btn" data-filter="rumah">Rumah</button>
+                    <button class="tab-btn" data-filter="kost">Kostan</button>
+                </div>
+            </div>
+            <div class="property-grid grid-4" id="exploreGrid">
+                <!-- Cards injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials">
+        <div class="container">
+            <span class="badge badge-small">TESTIMONI</span>
+            <h2 class="section-title">Dipercaya Mahasiswa IPB</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Dapat kost dekat CCR, tinggal jalan kaki 5 menit. Cocok buat maba kayak aku. Terima kasih Rumah Dekat IPB!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="User">
+                        <div>
+                            <strong>Dian Permata</strong>
+                            <span>Mahasiswa IPB 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Prosesnya cepet banget, 2 hari udah dapet kontrakan yang pas buat keluarga kecil. Harganya juga masuk akal."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User">
+                        <div>
+                            <strong>Budi Santoso</strong>
+                            <span>Dosen IPB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"Gratis admin, langsung ke pemiliknya. Suka banget sama transparansi harganya, jadi gak ada biaya tersembunyi."</p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="User">
+                        <div>
+                            <strong>Siti Nurhaliza</strong>
+                            <span>Mahasiswa IPB 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="faq">
+        <div class="container faq-container">
+            <h2 class="section-title">Pertanyaan Umum</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Apakah layanan Rumah Dekat IPB gratis?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ya, 100% gratis! Kami tidak memungut biaya apapun dari pencari hunian. Anda bisa mencari, membandingkan, dan menghubungi pemilik properti tanpa biaya.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Bagaimana cara menghubungi pemilik hunian?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Setiap properti memiliki tombol "Hubungi" yang akan langsung mengarahkan Anda ke WhatsApp pemilik properti. Anda bisa tanya langsung, atur jadwal survei, hingga nego harga.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Apakah semua properti di sini sudah aman & terverifikasi?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Kami melakukan verifikasi data properti dan identitas pemilik. Namun kami tetap sarankan untuk survei langsung lokasi sebelum memutuskan sewa.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Apakah bisa mencari kost putri atau putra saja?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tentu! Gunakan filter "Tipe Hunian" dan pilih Kost Putra, Kost Putri, atau Kost Campur sesuai kebutuhan Anda.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Bagaimana sistem pembayarannya?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sistem pembayaran ditentukan langsung oleh pemilik properti. Umumnya ada sistem bulanan, per semester, atau tahunan untuk kost, dan DP + cicilan untuk perumahan.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Apakah harga yang tertera bisa nego?
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Tergantung kebijakan pemilik. Beberapa pemilik memberi ruang negosiasi terutama untuk sewa jangka panjang. Silakan hubungi langsung pemilik untuk diskusi lebih lanjut.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA LIST PROPERTY ========== -->
+    <section class="cta-property">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-icon"><i class="fas fa-store"></i></div>
+                <h2>Punya Kost atau Rumah Dekat IPB?</h2>
+                <p>Daftarkan properti Anda sekarang dan temukan penyewa dalam hitungan hari. Gratis!</p>
+                <a href="#" class="btn btn-primary btn-lg">
+                    <i class="fab fa-whatsapp"></i> Daftarkan Properti via WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BOTTOM ========== -->
+    <section class="cta-bottom">
+        <div class="container">
+            <div class="cta-bottom-inner">
+                <div class="cta-bottom-content">
+                    <h2>Siap Menemukan Hunian Impianmu?</h2>
+                    <p>Mulai cari sekarang dan temukan tempat tinggal terbaik selama kuliah di IPB.</p>
+                </div>
+                <div class="cta-bottom-actions">
+                    <a href="#" class="btn btn-primary btn-lg"><i class="fas fa-search"></i> Cari Properti Sekarang</a>
+                    <a href="#" class="btn btn-outline btn-lg"><i class="fab fa-whatsapp"></i> Hubungi via WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-home logo-icon"></i>
+                    <span class="logo-text">Rumah Dekat IPB</span>
+                </a>
+                <p>Platform pencarian kost dan perumahan terverifikasi di sekitar kampus IPB Dramaga. Bantu mahasiswa dan keluarga menemukan hunian terbaik.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>NAVIGASI</h4>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="#">Perumahan</a></li>
+                    <li><a href="#">Kostan</a></li>
+                    <li><a href="#">Semua Properti</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>BANTUAN</h4>
+                <ul>
+                    <li><a href="#">Hubungi Kami</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Syarat & Ketentuan</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>KONTAK</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Dramaga, Bogor</li>
+                    <li><i class="fab fa-whatsapp"></i> 0812-3456-7890</li>
+                    <li><i class="fas fa-envelope"></i> info@rumahdekatipb.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Rumah Dekat IPB. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
